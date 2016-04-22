@@ -6,4 +6,14 @@
     <version>5.0.7</version>
   </parent>
   <artifactId>jfugue-examples</artifactId>
+  
+	<dependencies>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>jfugue-main</artifactId>
+			</dependency>
+
+	</dependencies>
+	
 </project>

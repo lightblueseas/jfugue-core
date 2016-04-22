@@ -12,7 +12,7 @@
 	<artifactId>jfugue-core</artifactId>
 	<version>5.0.7</version>
 	<packaging>pom</packaging>
-	
+
 	<modules>
 		<module>jfugue-demo</module>
 		<module>jfugue-examples</module>
@@ -21,5 +21,48 @@
 		<module>jfugue-test</module>
 		<module>jfugue-tour</module>
 	</modules>
-	
+
+	<properties>
+		<jfugue.version>5.0.7</jfugue.version>
+	</properties>
+
+
+	<dependencyManagement>
+
+		<dependencies>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>jfugue-demo</artifactId>
+				<version>${jfugue.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>jfugue-examples</artifactId>
+				<version>${jfugue.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>jfugue-main</artifactId>
+				<version>${jfugue.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>jfugue-manualtest</artifactId>
+				<version>${jfugue.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>jfugue-test</artifactId>
+				<version>${jfugue.version}</version>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
 </project>
